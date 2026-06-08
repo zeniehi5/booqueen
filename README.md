@@ -1,14 +1,15 @@
 ![header](https://capsule-render.vercel.app/api?type=Cylinder&color=003580&text=Booqueen.com&height=180&fontSize=50&fontColor=fff)
 ## ✨ Booqueen.com
-- 호텔 등 숙박시설에 대한 온라인 예약을 다루는 웹사이트 <span color="#004679">booking</span><span color="#00A0D6">.com</span> 을 벤치마킹 하여 프로젝트 제작
-- 프로젝트 기간 : 2022. 03. 02 ~ 2022. 04. 08
-- 프로젝트 인원 : 5명
-- 사이트 요약<br>
-  ✔ 사용자(user) : 호텔을 보다 편리하게 검색/예약할 수 있는 서비스 제공<br>
-  ✔ 호텔 관리자(partner) : 호텔 정책/객실/매출 관리 등을 통한 호텔 관리 서비스 제공<br>
-  ✔ 사이트 관리자(admin) : 통계/대금지급 등을 비롯한 매출과 사이트 전반에 대한 관리 서비스 제공
+- A web development project benchmarking **booking.com**, an online lodging reservation platform.
+- Project Period : 2022. 03. 02 ~ 2022. 04. 08
+- Team Size : 5 members
+- Project Summary<br>
+  ✔ User : Provides a convenient service to search and book hotels.<br>
+  ✔ Partner (Hotel Manager) : Provides management services including hotel policies, rooms, and revenue management.<br>
+  ✔ Admin (Site Administrator) : Provides full platform management, including statistics, payouts, and overall site monitoring.
 
-![image](https://user-images.githubusercontent.com/97867506/165015588-eae1828c-4f46-479a-acb0-806b9ef7e138.png)
+<img width="2986" height="1408" alt="Gemini_Generated_Image_ykz461ykz461ykz4" src="https://github.com/user-attachments/assets/fb09b1f5-a59c-4438-82d3-3e15ecd58635" />
+
 <br><br>
 <div align="center">🛠<b> Tech Stack </b>🛠</div><br>
 <div align="center">
@@ -29,64 +30,62 @@
   <img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=GitHub&logoColor=white"/>
 </div><br>
 
-# 1. 개발 동기
-팀원들과 프로젝트 주제를 고민하던 중, 날짜/필터/지도 등 다양한 기능을 구현해야 하는 것이 흥미로워 예약 사이트 구현에 도전하게 되었습니다.
+# 1. Motivation
+While brainstorming project topics with the team, we found the challenge of implementing diverse and complex features—such as date pickers, multi-layered filters, and interactive maps—highly compelling. This inspired us to build a full-scale reservation platform.
 <br><br>
 
-# 2. 개발 환경
-| 분류 | 개발 환경 |
+# 2. Development Environment
+| Category | Specifications |
 | :------------: | :-------------: |
-| 운영체제 | Windows 10 64bit |
-| 개발 언어 | Java, SQL, HTML, Javascript, CSS, JQuery, Ajax, XML, JSON |
-| 개발 도구 | Eclipse, PgAdmin, Maven, Java ORM Plugin |
-| 프레임 워크 | Spring Framework 5.3.4, MyBatis, Bootstrap |
-| 데이터베이스 | PostgreSQL 12.9 |
+| OS | Windows 10 64bit |
+| Languages | Java, SQL, HTML, Javascript, CSS, JQuery, Ajax, XML, JSON |
+| Dev Tools | Eclipse, PgAdmin, Maven, Java ORM Plugin |
+| Frameworks | Spring Framework 5.3.4, MyBatis, Bootstrap |
+| Database | PostgreSQL 12.9 |
 | WAS | Apache Tomcat 9.0 |
-| 웹 브라우저 | Chrome |
-| 버전관리 시스템 | Git, Github |
-| 라이브러리 | JSTL, lombok, aspectj, servlet-api, jackson, poi, amazonaws, commons-fileupload |
-| 오픈소스 | Kakao Map API, Kakao Login API, IamPort API |
+| Web Browser | Chrome |
+| VCS | Git, Github |
+| Libraries | JSTL, lombok, aspectj, servlet-api, jackson, poi, amazonaws, commons-fileupload |
+| Open Source / APIs | Kakao Map API, Kakao Login API, IamPort API |
 
 <br><br>
 
-# 3. 기능 소개
+# 3. Key Features
 
-### 💛 사용자(user) 기능
+### 💛 User Features
 
-- 회원가입, 로그인, 카카오 로그인, 회원정보 수정, 로그아웃
-- 메인 페이지에서 여행지 및 날짜 선택해 호텔 검색
-- 검색 결과 페이지(호텔 목록)에서 필터 선택을 통한 상세 검색
-- 리뷰/요금/평점 순으로 호텔 목록 정렬
-- 카카오 맵 API 활용으로 예약 가능한 호텔 목록과 관광명소 지도에서 확인
-- 지도에서 중심좌표 이동 시 호텔 목록이 중심좌표 근처의 호텔 리스트로 변경
-- 호텔 상세페이지에서 날짜 재검색, 호텔 위치/시설/정책/리뷰/문의/객실 사진/관광지와의 거리 확인, 위시리스트 추가/제거
-- 호텔 상세페이지에서 예약 가능한 방이 없을 경우 예약 가능한 날짜와 가격정보를 제공
-- 아임포트 API 활용으로 호텔 예약/결제 및 확인서 출력
-- 예약한 사람의 경우 호텔 관리자와 1:1 채팅
-- 호텔 이용 완료 후 리뷰 등록
-- 이용하지 않은 호텔 예약 취소 및 확인서 출력
-- 회원탈퇴(아직 이용하지 않은 예약된 호텔이 있을 경우 회원탈퇴 불가능)
+- Sign-up, Standard Login, Kakao Social Login, Profile Editing, Logout
+- Search for hotels by destination and travel dates from the main page
+- Filter hotel search results using detailed criteria on the results page
+- Sort hotel listings by reviews, price, or ratings
+- View available hotels and nearby tourist attractions on a map using the Kakao Map API
+- Dynamically update the hotel list based on the new center coordinates when moving the map
+- Re-search dates, view hotel location/facilities/policies/reviews/Q&A/room photos, distance to attractions, and add/remove from Wishlist on the hotel details page
+- Provide alternative available dates and pricing information if there are no rooms available on the selected dates
+- Secure hotel booking, payment processing, and confirmation receipt printing using the Iamport API
+- Live 1:1 chat between users with active bookings and hotel partners
+- Post hotel reviews after completing a stay
+- Cancel unfulfilled hotel reservations and print cancellation receipts
+- Account deletion (disabled if there are active, unfulfilled hotel reservations)
 
-### 💚 호텔 관리자(partner)
+### 💚 Partner (Hotel Manager) Features
 
-- 회원가입, 호텔 등록, 비밀번호 변경, 로그아웃
-- 신규 객실 추가, 객실 현황 캘린더로 보기, 예약 가능 객실 등록, 일별 객실 상태 변경
-- 전체 예약 목록, 예약정보 검색, 예약 상세페이지, 이용후기
-- 예약 상태 업데이트(이용전/체크인/이용완료/사이트 관리자에 대금지급요청)
-- 불법/부정 투숙객 신고
-- 호텔 사진 및 정책 관리, 객실 관리
-- 호텔 문의, 예약자와 1:1 채팅
-- 청구목록 Excel로 다운로드
-- 당월 매출액 & 일일 평균 요금 분석 & 월별 분석 차트 정보 확인
+- Sign-up, Hotel Registration, Password Change, Logout
+- Add new rooms, view room availability via a calendar dashboard, register bookable rooms, and update daily room statuses
+- View full booking lists, search booking details, access deep-dive reservation pages, and monitor user reviews
+- Manage booking life cycles (Before Stay / Checked In / Completed / Request Payout from Site Administrator)
+- Report fraudulent or problematic guests
+- Manage hotel photos, operational policies, and room details
+- Manage customer inquiries and live 1:1 chat with guests
+- Download billing/invoice lists as Excel files
+- Access data analytics dashboards (Current Month Revenue, Average Daily Rate [ADR], and Monthly Revenue Trends)
 
-### 💙 사이트 관리자(admin)
+### 💙 Site Administrator (Admin) Features
 
-- 로그인, 로그아웃
-- 회원/파트너/호텔 목록 및 상세보기
-- 신고 회원 관리
-- 파트너 계정 차단 관리
-- 사이트 문의게시판, 추천 여행지(배너), 이용약관 관리
-- 예약현황 조회, 거래내역 조회
-- 대금지급 관리
-
----
+- Login, Logout
+- View and inspect profiles/details of regular users, partners, and registered hotels
+- Manage reported users
+- Suspend and block malicious partner accounts
+- Manage customer service boards, featured travel destinations (main banners), and Terms of Service
+- Track live booking metrics and audit full transaction histories
+- Manage partner payout requests
